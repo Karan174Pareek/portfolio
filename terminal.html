@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Pareek</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close" onclick="location='./index.html'"></span>
+                <!-- <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span> -->
+            </div>
+            <span class="terminal-title">My terminal</span>
+        </div>
+        <div class="terminal-body">
+            <div class="output"></div>
+            <div class="input-line" id="inputLine">
+                <span class="prompt">visitor@myTerminal:~$</span>
+                <input type="text" id="terminal-input" autofocus autocomplete="false">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

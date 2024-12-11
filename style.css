@@ -1,0 +1,104 @@
+body {
+    background: url('backgroundimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 800px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333333;
+}
+
+.terminal-header {
+    background-color: #333333;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-title {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.terminal-button.close {
+    background-color: #ff605c;
+}
+
+.terminal-button.minimize {
+    background-color: #ffbd44;
+}
+
+.terminal-button.maximize {
+    background-color: #00ca4e;
+}
+
+.terminal-body {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.output {
+    margin-bottom: 0px;
+    overflow: scroll;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 5px;
+    color: #86e1fc;
+}
+
+#terminal-input {
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    flex-grow: 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#terminal-input::placeholder {
+    color: #7a7a7a;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hidden {
+    visibility: hidden;
+}

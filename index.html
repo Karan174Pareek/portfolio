@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Pareek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('backgroundimage.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .home-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .typewriter h1 {
+            border-right: .15em solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 3.4em;
+            font-weight: normal;
+            margin: 1%;
+        }
+
+        h2 {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 2em;
+            font-weight: normal;
+        }
+
+        /* Animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            from {
+                border-color: transparent;
+            }
+
+            to {
+                border-color: white;
+            }
+        }
+
+        .typewriter h1 {
+            animation: typing 2.5s steps(30, end), blink .35s step-end infinite;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            /* background-color: #575757; */
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .home-container {
+                padding-top: 80px;
+                height: calc(100vh - 80px);
+                height: 100%;
+            }
+
+            .typewriter {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 700px) {
+            /* .navbar a {
+                font-size: 0.8em;
+            } */
+
+            .typewriter {
+                font-size: 0.5em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-container">
+        <div class="typewriter">
+            <h1>&nbsp; Hi! I am Karan Pareek. &nbsp;</h1>
+            <h3 class="hidden" id="description">Building tech for a better world...
+                <br>
+                Software engineer <br>Web Developer 
+            </h3>
+            <br><br><br>
+            <h3 class="hidden" id="menu">
+                <a href="./terminal.html">Terminal</a> |
+                <a href="./about.html">About</a> |
+                <br>
+                <a href="./contact.html">Contact</a> |
+                <a href="./resume.pdf" target="_blank">Resume</a>
+            </h3>
+        </div>
+    </div>
+    <script>
+        function showDescription() {
+            const element = document.getElementById('description');
+            element.classList.remove('hidden');
+        }
+        function showMenu() {
+            const element = document.getElementById('menu');
+            element.classList.remove('hidden');
+        }
+        setTimeout(showDescription, 3000);
+        setTimeout(showMenu, 3500);
+    </script>
+</body>
+
+</html>
