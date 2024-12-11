@@ -39,7 +39,7 @@ This is a portfolio website showcasing the skills, projects, and contact informa
 
 ## Live Demo
 
-You can host the website on GitHub Pages, Netlify, or any static hosting platform for live access.
+https://candid-pika-42172e.netlify.app/
 
 ## Contact
 
