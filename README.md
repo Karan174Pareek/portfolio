@@ -39,7 +39,7 @@ This is a portfolio website showcasing the skills, projects, and contact informa
 
 ## Live Demo
 
-https://candid-pika-42172e.netlify.app/
+https://karan174pareek.github.io/portfolio/
 
 ## Contact
 
