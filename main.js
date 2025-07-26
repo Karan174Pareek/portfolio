@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 break;
             case 'about':
                 printOutput('Name: Karan Pareek');
-                printOutput('Bio: Proficient in developing scalable and efficient solutions with a strong foundation in Java, HTML, CSS, JavaScript, and basic knowledge of C and SQL. Demonstrates excellent leadership skills, problem-solving abilities, adaptability, and a strong team spirit, with experience in collaborating on cross-functional initiatives.');
+                printOutput('Bio: A highly motivated and results-driven Web Developer with a strong foundation in Java, HTML, CSS, JavaScript, and hands-on experience with modern frameworks such as React, Node.js, Express, and MongoDB. Proficient in developing responsive, user-friendly, and scalable web applications with a focus on clean code and performance.Experienced in implementing effective On-Page and Off-Page SEO practices to support web visibility and performance.Equipped with excellent problem-solving abilities, leadership skills, adaptability, and a strong team spirit, with experience collaborating on cross-functional projects. Eager to contribute to a growth-oriented organization while continuously learning and enhancing technical expertise.');
                 break;
             case 'contact':
                 printOutput('Phone: +91 8101482088');
@@ -58,15 +58,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             element.classList.add('hidden');
             await sleep(2000);
             window.location.href = './index.html';
-        }
-        if (command === 'blog') {
-            const element = document.getElementById('inputLine');
-            element.classList.add('hidden');
-            await sleep(1000);
-            await sleep(1000);
-            await sleep(1000);
-            window.open('https://blog.kunalpareek.com', '_blank').focus(); 
-            element.classList.remove('hidden');
         }
         if (command === 'resume') {
             await sleep(1000);
